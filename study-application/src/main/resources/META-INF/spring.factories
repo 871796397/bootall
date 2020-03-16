@@ -1,0 +1,12 @@
+#ApplicationContextInitializer 实现配置
+org.springframework.context.ApplicationContextInitializer=\
+com.godling.studyapplication.context.FuckAfterApplicationContext,\
+com.godling.studyapplication.context.MotherFuckerApplicationContext
+# Application 实现配置
+org.springframework.context.ApplicationListener=\
+com.godling.studyapplication.listener.PieceOfShitApplicationLinstener,\
+com.godling.studyapplication.listener.DogShitApplicationLinstener,\
+com.godling.studyapplication.listener.BeforeConfigApplicationListener
+#SpringApplicationRunListener实现配置
+org.springframework.boot.SpringApplicationRunListener=\
+com.godling.studyapplication.run.ShowPussyRunListener
