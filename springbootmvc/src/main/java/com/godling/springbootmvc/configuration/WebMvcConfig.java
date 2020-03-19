@@ -3,7 +3,6 @@ package com.godling.springbootmvc.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
@@ -19,17 +18,8 @@ import javax.servlet.http.HttpServletResponse;
  * @create: 2020-03-16 15:16
  **/
 @Configuration
-@EnableWebMvc
+//@EnableWebMvc
 public class WebMvcConfig implements WebMvcConfigurer {
-
-    @Bean
-    public InternalResourceViewResolver viewResolver() {
-        InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
-        internalResourceViewResolver.setViewClass(JstlView.class);
-        internalResourceViewResolver.setPrefix("/WEB-INF/jsp/");
-        internalResourceViewResolver.setSuffix(".jsp");
-        return internalResourceViewResolver;
-    }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
