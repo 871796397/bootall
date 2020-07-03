@@ -15,6 +15,7 @@
         <module>study-application</module>
         <module>spring-mvc</module>
         <module>springbootmvc</module>
+        <module>springboot-rest</module>
     </modules>
 
     <properties>
